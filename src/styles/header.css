@@ -1,0 +1,28 @@
+.header {
+  background-image: url(https://clipground.com/images/header-png-1.png);
+  padding: 1%;
+
+  >h1 {
+    color: antiquewhite;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  >h4 {
+    color: darkgray;
+    margin-top: 0px;
+  }
+
+  .nav_header {
+    display: flex;
+    justify-content: end;
+    gap: 5%;
+
+    >a {
+      text-decoration: none;
+      color: whitesmoke;
+      font-weight: 500;
+    }
+  }
+
+}
