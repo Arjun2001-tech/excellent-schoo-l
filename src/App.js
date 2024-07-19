@@ -1,23 +1,32 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-// import HomeSlider from './components/HomeSlider';
-import About from './components/AboutUs';
-import Admissions from './components/Admissions';
-import Academics from './components/Academics';
-import Hostels from './components/Hostels';
-import Contact from './components/Contact';
-function App() {
+import HomeHeader from './screens/excellentSchool/components/HomeHeader';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import './assets/less/common.less';
+import './assets/less/toggle.less';
+import './assets/less/config.less';
+import './assets/less/config.css';
+
+const App = () => {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
+      <HomeHeader />
       {/* <HomeSlider /> */}
-      <About />
+      {/* <About />
       <Admissions />
       <Academics />
       <Hostels />
-      <Contact />
+      <Contact /> */}
     </div>
+
+    // <Suspense>
+    //   <Switch>
+    //     <Route path="/header" component={Header} />
+    //     <Route path="/" component={HomeSlider} />
+    //   </Switch >
+    // </Suspense>
   );
 }
 

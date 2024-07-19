@@ -1,0 +1,63 @@
+.header {
+  background-image: url(https://clipground.com/images/header-png-1.png);
+  padding: 1%;
+
+  >div:first-child {
+    display: flex;
+    align-items: center;
+
+    >img {
+      width: 10%;
+      cursor: pointer;
+    }
+
+    >div {
+      width: 90%;
+
+      >h1 {
+        color: antiquewhite;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      >h4 {
+        color: darkgray;
+        margin-top: 0px;
+      }
+    }
+  }
+
+  .nav_header {
+    >div {
+      display: flex;
+      justify-content: end;
+      gap: 5%;
+      color: white;
+
+      >div:first-child {
+        display: none;
+      }
+
+      >div {
+        cursor: pointer;
+        font-size: 15px;
+
+        >div {
+          border: 2px solid var(--color-laurel-green);
+          /* width: 2em; */
+          border-radius: 6px;
+        }
+      }
+    }
+
+  }
+
+}
+
+.home_slider {
+  >div:first-child {
+    >ul {
+      display: none !important;
+    }
+  }
+}
