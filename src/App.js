@@ -1,5 +1,4 @@
-import React, { Suspense } from 'react';
-import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import React from 'react';
 import './App.css';
 import HomeHeader from './screens/excellent School/components/HomeHeader';
 // import Header from './s./components/Header';
