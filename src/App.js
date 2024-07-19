@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import HomeHeader from './screens/excellent School/components/HomeHeader';
+import HomeHeader from './screens/excellentSchool/components/HomeHeader';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import './assets/less/common.less';

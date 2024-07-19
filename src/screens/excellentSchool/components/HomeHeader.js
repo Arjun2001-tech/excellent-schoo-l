@@ -6,19 +6,20 @@ import Contact from "./Contact";
 import Academics from "./Academics";
 import Hostels from "./Hostels";
 import HomeSlider from "./HomeSlider";
+import { Image } from "semantic-ui-react";
 
 const HomeHeader = () => {
-  const menuTabs = ["",'aboutUs', 'admissions', 'academics', 'hostels', 'contact'];
+  const menuTabs = ["", 'About Us', 'Admissions', 'Academics', 'Hostels', 'Contact'];
   const [activeTab, setActiveTab] = useState(menuTabs[0]);
 
   let Component = null;
 
   const compobj = {
-    aboutUs: AboutUs,
-    admissions: Admissions,
-    academics: Academics,
-    hostels: Hostels,
-    contact: Contact
+    "About Us": AboutUs,
+    Admissions: Admissions,
+    Academics: Academics,
+    Hostels: Hostels,
+    Contact: Contact
   };
   Component = compobj[activeTab];
   //console.log(menuTabs, "menuTabs");
@@ -26,8 +27,16 @@ const HomeHeader = () => {
   return (
     <>
       <div className="header">
-        <h1>SRM Valliammai Engineering College</h1>
-        <h4>Chengalpattu District, Tamil Nadu, India.</h4>
+        <div>
+          <Image
+            src="https://freesvg.org/img/logo_school.png"
+            onClick={() => setActiveTab("")}
+          />
+          <div>
+            <h1>EXCELLENT HR. SEC. SCHOOL</h1>
+            <h4>Tamil Nadu, India.</h4>
+          </div>
+        </div>
         <div className="nav_header"
           data-aos="fade-down"
           data-aos-duration="1000"
@@ -50,7 +59,7 @@ const HomeHeader = () => {
           </div>
         </div>
       </div>
-      {activeTab ===""  ? (
+      {activeTab === "" ? (
         <HomeSlider />
       ) : (
         <>
