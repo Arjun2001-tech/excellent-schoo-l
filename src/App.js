@@ -1,8 +1,12 @@
 import React from 'react';
 import './App.css';
 import HomeHeader from './screens/excellent School/components/HomeHeader';
-// import Header from './s./components/Header';
-// import Header from "./screens./component/Header"
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import './assets/less/common.less';
+import './assets/less/toggle.less';
+import './assets/less/config.less';
+import './assets/less/config.css';
 
 const App = () => {
   return (
