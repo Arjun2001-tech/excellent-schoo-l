@@ -1,23 +1,29 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import './App.css';
-import Header from './components/Header';
-// import HomeSlider from './components/HomeSlider';
-import About from './components/AboutUs';
-import Admissions from './components/Admissions';
-import Academics from './components/Academics';
-import Hostels from './components/Hostels';
-import Contact from './components/Contact';
-function App() {
+import HomeHeader from './screens/excellent School/components/HomeHeader';
+// import Header from './s./components/Header';
+// import Header from "./screens./component/Header"
+
+const App = () => {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
+      <HomeHeader />
       {/* <HomeSlider /> */}
-      <About />
+      {/* <About />
       <Admissions />
       <Academics />
       <Hostels />
-      <Contact />
+      <Contact /> */}
     </div>
+
+    // <Suspense>
+    //   <Switch>
+    //     <Route path="/header" component={Header} />
+    //     <Route path="/" component={HomeSlider} />
+    //   </Switch >
+    // </Suspense>
   );
 }
 
