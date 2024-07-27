@@ -1,6 +1,7 @@
 .header {
-  background-image: url(https://clipground.com/images/header-png-1.png);
+  background-image: url(https://cdn.wallpapersafari.com/10/47/wEziqy.png);
   padding: 1%;
+  height: 165px;
 
   >div:first-child {
     display: flex;
@@ -15,13 +16,13 @@
       width: 90%;
 
       >h1 {
-        color: antiquewhite;
+        color: #041350;
         margin-top: 0px;
         margin-bottom: 0px;
       }
 
       >h4 {
-        color: darkgray;
+        color: #550d0d;
         margin-top: 0px;
       }
     }
@@ -43,10 +44,17 @@
         font-size: 15px;
 
         >div {
-          border: 2px solid var(--color-laurel-green);
+          /* border: 2px solid #487863; */
           /* width: 2em; */
           border-radius: 6px;
         }
+      }
+
+      .activeTab {
+        background-color: #487863;
+        padding: 1px;
+        border-radius: 5px;
+        color: yellow;
       }
     }
 

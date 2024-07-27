@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import '../styles/header.css';
+import { Image } from "semantic-ui-react";
+import HomeSlider from "./HomeSlider";
 import AboutUs from "./AboutUs";
 import Admissions from "./Admissions";
-import Contact from "./Contact";
 import Academics from "./Academics";
 import Hostels from "./Hostels";
-import HomeSlider from "./HomeSlider";
-import { Image } from "semantic-ui-react";
+import Contact from "./Contact";
+import '../styles/header.css';
 
 const HomeHeader = () => {
-  const menuTabs = ["", 'About Us', 'Admissions', 'Academics', 'Hostels', 'Contact'];
+  const menuTabs = ["", 'About Us', 'Admissions', 'Academics', 'Hostels', 'Contact Us'];
   const [activeTab, setActiveTab] = useState(menuTabs[0]);
 
   let Component = null;
@@ -19,10 +19,9 @@ const HomeHeader = () => {
     Admissions: Admissions,
     Academics: Academics,
     Hostels: Hostels,
-    Contact: Contact
+    "Contact Us": Contact
   };
   Component = compobj[activeTab];
-  //console.log(menuTabs, "menuTabs");
 
   return (
     <>
